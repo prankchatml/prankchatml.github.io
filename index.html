@@ -3,73 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MLBB Chat Prank Generator - Buat Kode Chat Fake Mobile Legends</title>
-    <meta name="description" content="Generator kode chat prank Mobile Legends: Bang Bang. Buat kode chat [Semua] palsu dengan nick dan hero musuh untuk konten lucu, prank teman, atau keperluan editing video MLBB.">
-    <meta name="keywords" content="MLBB, Mobile Legends, chat prank, generator, kode chat ML, fake chat MLBB, prank ML, chat semua ML, kode hex MLBB">
-    <meta name="author" content="MLBB Chat Gen">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://prankchatml.my.id/">
+    <title>MLBB Chat Prank Generator — Buat Chat Palsu Mobile Legends</title>
 
-    <!-- OpenGraph / Facebook -->
+    <!-- SEO & OpenGraph -->
+    <meta name="description" content="Generator chat prank Mobile Legends: Bang Bang. Buat chat palsu dengan format warna in-game dan salin langsung ke clipboard.">
+    <meta name="keywords" content="MLBB, Mobile Legends, chat prank, generator, chat palsu, MLBB chat">
+    <meta name="author" content="MLBB Chat Generator">
+    <meta name="robots" content="index, follow">
+
+    <!-- OpenGraph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://prankchatml.my.id/">
-    <meta property="og:title" content="MLBB Chat Prank Generator - Buat Kode Chat Fake Mobile Legends">
-    <meta property="og:description" content="Generator kode chat prank Mobile Legends: Bang Bang. Buat kode chat [Semua] palsu untuk konten lucu, prank, dan editing video.">
-    <meta property="og:image" content="https://prankchatml.my.id/og-image.png">
+    <meta property="og:title" content="MLBB Chat Prank Generator">
+    <meta property="og:description" content="Buat chat palsu Mobile Legends dengan format warna in-game. Salin & tempel langsung ke chat [All].">
+    <meta property="og:url" content="https://mlbb-chat-generator.vercel.app">
+    <meta property="og:site_name" content="MLBB Chat Generator">
+    <meta property="og:image" content="https://mlbb-chat-generator.vercel.app/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="MLBB Chat Prank Generator Preview">
-    <meta property="og:site_name" content="MLBB Chat Gen">
     <meta property="og:locale" content="id_ID">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://prankchatml.my.id/">
-    <meta name="twitter:title" content="MLBB Chat Prank Generator - Buat Kode Chat Fake Mobile Legends">
-    <meta name="twitter:description" content="Generator kode chat prank Mobile Legends: Bang Bang. Buat kode chat [Semua] palsu untuk konten lucu dan prank.">
-    <meta name="twitter:image" content="https://prankchatml.my.id/og-image.png">
-    <meta name="twitter:image:alt" content="MLBB Chat Prank Generator Preview">
+    <meta name="twitter:title" content="MLBB Chat Prank Generator">
+    <meta name="twitter:description" content="Buat chat palsu Mobile Legends dengan format warna in-game. Salin & tempel langsung ke chat [All].">
+    <meta name="twitter:image" content="https://mlbb-chat-generator.vercel.app/og-image.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://mlbb-chat-generator.vercel.app">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>">
-    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
 
     <style>
         :root {
-            --bg: #0a0a0f;
-            --surface-1: #12121a;
-            --surface-2: #1a1a28;
-            --surface-3: #222236;
-            --border: rgba(255, 255, 255, 0.06);
-            --border-active: rgba(255, 75, 100, 0.5);
-            --text: #e8e8f0;
-            --text-secondary: #9494b8;
-            --text-dim: #6b6b8a;
-            --primary: #ff3b5c;
-            --primary-glow: rgba(255, 59, 92, 0.35);
-            --primary-soft: rgba(255, 59, 92, 0.12);
-            --accent: #ff9f43;
-            --accent-glow: rgba(255, 159, 67, 0.3);
-            --success: #2ed573;
-            --success-glow: rgba(46, 213, 115, 0.35);
-            --danger: #ff4757;
-            --info: #4da6ff;
-            --gold: #ffd700;
-            --gradient-1: linear-gradient(135deg, #ff3b5c 0%, #ff6b81 50%, #ff3b5c 100%);
-            --gradient-2: linear-gradient(135deg, #1a1a30 0%, #222240 50%, #1a1a30 100%);
-            --gradient-card: linear-gradient(160deg, #161625 0%, #1a1a2e 40%, #1e1e35 100%);
-            --shadow-lg: 0 25px 60px rgba(0, 0, 0, 0.6);
-            --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.5);
-            --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.4);
-            --radius-xl: 20px;
-            --radius-lg: 14px;
-            --radius-md: 10px;
+            --bg: #0b0c10;
+            --surface: #15161a;
+            --surface-hover: #1a1b20;
+            --border: #2a2b30;
+            --border-focus: #3b82f6;
+            --text: #e8e8ec;
+            --text-muted: #8b8d93;
+            --accent: #3b82f6;
+            --accent-hover: #2563eb;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --radius: 12px;
             --radius-sm: 8px;
-            --radius-xs: 6px;
-            --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-            --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            --font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', 'Cascadia Code', 'Courier New', monospace;
-            --font-sans: 'Plus Jakarta Sans', 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --shadow: 0 1px 3px rgba(0,0,0,0.3);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.4);
+            --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         * {
@@ -79,731 +61,352 @@
         }
 
         body {
-            font-family: var(--font-sans);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             background: var(--bg);
-            background-image:
-                radial-gradient(ellipse at 20% 20%, rgba(255, 59, 92, 0.04) 0%, transparent 50%),
-                radial-gradient(ellipse at 80% 60%, rgba(255, 159, 67, 0.03) 0%, transparent 50%),
-                radial-gradient(ellipse at 50% 100%, rgba(77, 166, 255, 0.03) 0%, transparent 50%);
             color: var(--text);
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 16px;
-            line-height: 1.5;
+            padding: 24px;
+            line-height: 1.6;
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
         }
 
-        /* Subtle animated background particles */
-        .bg-particles {
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            z-index: 0;
-            overflow: hidden;
-        }
-        .bg-particles span {
-            position: absolute;
-            display: block;
-            width: 6px;
-            height: 6px;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 50%;
-            animation: floatUp 12s infinite;
-            bottom: -20px;
-        }
-        .bg-particles span:nth-child(1) {
-            left: 5%;
-            animation-delay: 0s;
-            animation-duration: 10s;
-        }
-        .bg-particles span:nth-child(2) {
-            left: 15%;
-            animation-delay: 2s;
-            animation-duration: 14s;
-            width: 4px;
-            height: 4px;
-        }
-        .bg-particles span:nth-child(3) {
-            left: 28%;
-            animation-delay: 4s;
-            animation-duration: 9s;
-        }
-        .bg-particles span:nth-child(4) {
-            left: 40%;
-            animation-delay: 1s;
-            animation-duration: 16s;
-            width: 3px;
-            height: 3px;
-        }
-        .bg-particles span:nth-child(5) {
-            left: 55%;
-            animation-delay: 3s;
-            animation-duration: 11s;
-            width: 5px;
-            height: 5px;
-        }
-        .bg-particles span:nth-child(6) {
-            left: 68%;
-            animation-delay: 5s;
-            animation-duration: 13s;
-        }
-        .bg-particles span:nth-child(7) {
-            left: 78%;
-            animation-delay: 2.5s;
-            animation-duration: 15s;
-            width: 4px;
-            height: 4px;
-        }
-        .bg-particles span:nth-child(8) {
-            left: 90%;
-            animation-delay: 0.5s;
-            animation-duration: 8s;
-            width: 3px;
-            height: 3px;
-        }
-        @keyframes floatUp {
-            0% {
-                transform: translateY(0) translateX(0) scale(1);
-                opacity: 0;
-            }
-            20% {
-                opacity: 0.5;
-            }
-            80% {
-                opacity: 0.3;
-            }
-            100% {
-                transform: translateY(-105vh) translateX(40px) scale(0.3);
-                opacity: 0;
-            }
-        }
-
-        .main-wrapper {
-            position: relative;
-            z-index: 1;
-            width: 100%;
-            max-width: 500px;
-        }
-
-        /* Card Container */
         .card {
-            background: var(--gradient-card);
+            background: var(--surface);
             border: 1px solid var(--border);
-            border-radius: var(--radius-xl);
-            padding: 28px 24px 24px;
+            border-radius: var(--radius);
+            width: 100%;
+            max-width: 420px;
+            padding: 32px;
             box-shadow: var(--shadow-lg);
-            position: relative;
-            overflow: hidden;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            transition: border-color var(--transition-smooth);
-        }
-        .card::before {
-            content: '';
-            position: absolute;
-            top: -1px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60%;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, var(--primary-glow), var(--accent-glow), transparent);
-            border-radius: 0 0 50% 50%;
-            opacity: 0.7;
-            transition: opacity var(--transition-smooth);
-        }
-        .card:hover::before {
-            opacity: 1;
+            animation: fadeIn 0.4s ease-out;
         }
 
-        /* Header */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
         .header {
             text-align: center;
-            margin-bottom: 24px;
+            margin-bottom: 28px;
         }
+
         .header-icon {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-            border-radius: var(--radius-md);
-            background: var(--primary-soft);
-            font-size: 26px;
+            font-size: 32px;
             margin-bottom: 8px;
-            position: relative;
-            animation: pulseIcon 3s ease-in-out infinite;
-        }
-        @keyframes pulseIcon {
-            0%,
-            100% {
-                box-shadow: 0 0 0 0 var(--primary-glow);
-            }
-            50% {
-                box-shadow: 0 0 0 14px rgba(255, 59, 92, 0);
-            }
-        }
-        .header h1 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            background: var(--gradient-1);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin: 0;
-        }
-        .header .subtitle {
-            font-size: 0.78rem;
-            color: var(--text-dim);
-            margin-top: 2px;
-            letter-spacing: 0.3px;
-        }
-
-        /* Form */
-        .form-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-            margin-bottom: 20px;
-        }
-        .input-group {
-            position: relative;
-        }
-        .input-group label {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 0.7rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--text-secondary);
-            margin-bottom: 6px;
-        }
-        .input-group label .label-icon {
-            font-size: 0.85rem;
-        }
-        .input-group input {
-            width: 100%;
-            padding: 13px 16px;
-            border-radius: var(--radius-md);
-            border: 2px solid transparent;
-            background: var(--surface-2);
-            color: var(--text);
-            font-size: 0.92rem;
-            font-family: var(--font-sans);
-            outline: none;
-            transition: all var(--transition-fast);
-            box-shadow: var(--shadow-sm);
-            letter-spacing: 0.2px;
-        }
-        .input-group input::placeholder {
-            color: var(--text-dim);
-            opacity: 0.6;
-        }
-        .input-group input:focus {
-            border-color: var(--primary);
-            background: var(--surface-3);
-            box-shadow: 0 0 0 6px var(--primary-soft), var(--shadow-sm);
-            transform: translateY(-1px);
-        }
-        .input-group input:hover:not(:focus) {
-            border-color: rgba(255, 255, 255, 0.15);
-            background: #1e1e32;
-        }
-
-        /* Chat Type Toggle */
-        .chat-type-row {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 16px;
-            flex-wrap: wrap;
-        }
-        .chat-type-btn {
-            flex: 1;
-            min-width: 70px;
-            padding: 9px 12px;
-            border-radius: var(--radius-xs);
-            border: 2px solid var(--border);
-            background: var(--surface-2);
-            color: var(--text-secondary);
-            font-size: 0.75rem;
-            font-weight: 700;
-            cursor: pointer;
-            letter-spacing: 0.4px;
-            transition: all var(--transition-fast);
-            text-align: center;
-            font-family: var(--font-sans);
-            white-space: nowrap;
-        }
-        .chat-type-btn:hover {
-            border-color: rgba(255, 255, 255, 0.25);
-            color: var(--text);
-            background: var(--surface-3);
-        }
-        .chat-type-btn.active {
-            border-color: var(--primary);
-            background: var(--primary-soft);
-            color: var(--primary);
-            box-shadow: 0 0 16px var(--primary-glow);
-            font-weight: 800;
-        }
-
-        /* Preview */
-        .preview-section {
-            margin-bottom: 18px;
-        }
-        .preview-label {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 0.68rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
-            color: var(--accent);
-            margin-bottom: 8px;
-            justify-content: center;
-        }
-        .preview-label::before,
-        .preview-label::after {
-            content: '';
-            width: 20px;
-            height: 1px;
-            background: var(--accent-glow);
-            border-radius: 1px;
-        }
-        .chat-preview-box {
-            background: rgba(0, 0, 0, 0.55);
-            padding: 14px 16px;
-            border-radius: var(--radius-md);
-            font-size: 0.85rem;
-            line-height: 1.5;
-            border-left: 4px solid var(--primary);
-            position: relative;
-            font-family: var(--font-sans);
-            min-height: 42px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: baseline;
-            gap: 2px;
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
-            transition: all var(--transition-smooth);
-        }
-        .chat-preview-box .chat-tag {
-            color: #ff5e6b;
-            font-weight: 700;
-            font-size: 0.8rem;
-            white-space: nowrap;
-        }
-        .chat-preview-box .chat-nick {
-            color: #ffcc00;
-            font-weight: 700;
-            font-size: 0.82rem;
-        }
-        .chat-preview-box .chat-hero {
-            color: #a0d8ef;
-            font-size: 0.78rem;
-        }
-        .chat-preview-box .chat-colon {
-            color: #ccc;
-        }
-        .chat-preview-box .chat-msg {
-            color: #ffffff;
-            font-weight: 500;
-            word-break: break-word;
-        }
-        .typing-cursor {
-            display: inline-block;
-            width: 2px;
-            height: 1em;
-            background: var(--primary);
-            margin-left: 2px;
-            animation: blink 0.7s step-end infinite;
-            vertical-align: text-bottom;
-        }
-        @keyframes blink {
-            50% {
-                opacity: 0;
-            }
-        }
-
-        /* Preset Chats */
-        .preset-section {
-            margin-bottom: 16px;
-        }
-        .preset-label-sm {
-            font-size: 0.65rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--text-dim);
-            margin-bottom: 6px;
-            text-align: center;
-        }
-        .preset-chips {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            justify-content: center;
-        }
-        .preset-chip {
-            padding: 7px 13px;
-            border-radius: 50px;
-            border: 1.5px solid var(--border);
-            background: var(--surface-2);
-            color: var(--text-secondary);
-            font-size: 0.72rem;
-            cursor: pointer;
-            transition: all var(--transition-fast);
-            font-family: var(--font-sans);
-            white-space: nowrap;
-            letter-spacing: 0.2px;
-        }
-        .preset-chip:hover {
-            border-color: var(--accent);
-            color: var(--accent);
-            background: rgba(255, 159, 67, 0.08);
-            box-shadow: 0 0 12px var(--accent-glow);
-            transform: translateY(-2px);
-        }
-        .preset-chip:active {
-            transform: scale(0.94);
-            transition: transform 0.08s;
-        }
-
-        /* Output */
-        .output-label {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 0.7rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--success);
-            margin-bottom: 8px;
-            justify-content: center;
-        }
-        .output-container {
-            position: relative;
-            background: #000000;
-            padding: 14px 16px;
-            border-radius: var(--radius-md);
-            border: 2px dashed rgba(46, 213, 115, 0.4);
-            cursor: pointer;
-            transition: all var(--transition-smooth);
-            user-select: all;
-            -webkit-user-select: all;
-            -moz-user-select: all;
-            -ms-user-select: all;
-            box-shadow: inset 0 0 30px rgba(46, 213, 115, 0.03);
-        }
-        .output-container:hover {
-            border-color: var(--success);
-            background: #020804;
-            box-shadow: 0 0 24px var(--success-glow), inset 0 0 30px rgba(46, 213, 115, 0.05);
-            transform: translateY(-1px);
-        }
-        .output-container:active {
-            transform: scale(0.985);
-            transition: transform 0.1s;
-        }
-        .output-code {
-            color: var(--success);
-            font-family: var(--font-mono);
-            font-size: 0.78rem;
-            word-break: break-all;
-            margin: 0;
-            line-height: 1.6;
-            letter-spacing: -0.2px;
-        }
-        .copy-hint {
             display: block;
-            text-align: center;
-            font-size: 0.66rem;
-            color: var(--text-dim);
-            margin-top: 8px;
-            letter-spacing: 0.3px;
         }
-        .copy-ripple {
+
+        .header h1 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: var(--text);
+        }
+
+        .header p {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.6875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 14px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            color: var(--text);
+            font-size: 0.9375rem;
+            font-family: inherit;
+            outline: none;
+            transition: border-color var(--transition), box-shadow var(--transition);
+        }
+
+        input[type="text"]::placeholder {
+            color: #555;
+        }
+
+        input[type="text"]:focus {
+            border-color: var(--border-focus);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--border);
+            margin: 24px 0;
+            position: relative;
+        }
+
+        .divider span {
             position: absolute;
-            border-radius: 50%;
-            background: rgba(46, 213, 115, 0.5);
-            transform: scale(0);
-            animation: rippleEffect 0.7s ease-out forwards;
-            pointer-events: none;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--surface);
+            padding: 0 12px;
+            font-size: 0.6875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+            font-weight: 600;
         }
-        @keyframes rippleEffect {
-            to {
-                transform: scale(4);
-                opacity: 0;
-            }
+
+        .preview-box {
+            background: rgba(0,0,0,0.35);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 14px 16px;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            border-left: 3px solid var(--danger);
+        }
+
+        .preview-box .channel {
+            color: #ff6b6b;
+            font-weight: 600;
+        }
+
+        .preview-box .nick {
+            color: #ffd43b;
+        }
+
+        .preview-box .hero {
+            color: #74c0fc;
+        }
+
+        .preview-box .msg {
+            color: var(--text);
+        }
+
+        .output-section {
+            position: relative;
+        }
+
+        .output-box {
+            background: var(--bg);
+            border: 1px dashed var(--border);
+            border-radius: var(--radius-sm);
+            padding: 14px 16px;
+            font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+            font-size: 0.8125rem;
+            color: var(--success);
+            word-break: break-all;
+            line-height: 1.5;
+            cursor: pointer;
+            transition: all var(--transition);
+            user-select: all;
+        }
+
+        .output-box:hover {
+            border-color: var(--accent);
+            background: var(--surface-hover);
+        }
+
+        .output-box:active {
+            transform: scale(0.995);
+        }
+
+        .output-hint {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            margin-top: 10px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .output-hint svg {
+            width: 14px;
+            height: 14px;
+            opacity: 0.6;
         }
 
         /* Toast */
-        #toast {
-            visibility: hidden;
-            min-width: 220px;
-            background: #1a2e1f;
-            color: var(--success);
-            text-align: center;
-            border-radius: 50px;
-            padding: 12px 24px;
+        .toast {
             position: fixed;
-            z-index: 999;
-            bottom: 30px;
+            bottom: 28px;
             left: 50%;
             transform: translateX(-50%) translateY(20px);
-            font-weight: 700;
-            font-size: 0.85rem;
-            letter-spacing: 0.3px;
-            box-shadow: 0 8px 30px var(--success-glow);
-            border: 1px solid rgba(46, 213, 115, 0.5);
+            background: var(--success);
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            box-shadow: 0 4px 20px rgba(34, 197, 94, 0.3);
             opacity: 0;
-            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
             pointer-events: none;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-        #toast.show {
-            visibility: visible;
+
+        .toast.show {
             opacity: 1;
             transform: translateX(-50%) translateY(0);
         }
 
-        /* Footer */
-        .footer-note {
-            text-align: center;
-            font-size: 0.62rem;
-            color: var(--text-dim);
-            margin-top: 16px;
-            letter-spacing: 0.3px;
-            opacity: 0.7;
+        .toast-icon {
+            width: 18px;
+            height: 18px;
         }
 
-        /* Scrollbar */
-        ::-webkit-scrollbar {
-            width: 5px;
+        /* Tooltip on output hover */
+        .copy-tooltip {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent);
+            color: #fff;
+            font-size: 0.6875rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 6px;
+            opacity: 0;
+            transition: opacity var(--transition);
+            pointer-events: none;
+            white-space: nowrap;
         }
-        ::-webkit-scrollbar-track {
-            background: transparent;
+
+        .output-section:hover .copy-tooltip {
+            opacity: 1;
         }
-        ::-webkit-scrollbar-thumb {
-            background: var(--surface-3);
-            border-radius: 10px;
+
+        .copy-tooltip::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 4px solid var(--accent);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 0.6875rem;
+            color: var(--text-muted);
+            opacity: 0.7;
         }
 
         /* Responsive */
         @media (max-width: 480px) {
             .card {
-                padding: 20px 14px 18px;
-                border-radius: var(--radius-lg);
-            }
-            .header h1 {
-                font-size: 1.25rem;
-            }
-            .input-group input {
-                padding: 11px 13px;
-                font-size: 0.85rem;
-            }
-            .chat-type-btn {
-                padding: 8px 10px;
-                font-size: 0.7rem;
-                min-width: 55px;
-            }
-            .output-code {
-                font-size: 0.7rem;
-            }
-            .preset-chip {
-                padding: 6px 10px;
-                font-size: 0.68rem;
+                padding: 24px 20px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Background particles -->
-    <div class="bg-particles">
-        <span></span><span></span><span></span><span></span>
-        <span></span><span></span><span></span><span></span>
-    </div>
-
-    <!-- Toast -->
-    <div id="toast">✅ Berhasil Disalin!</div>
-
-    <!-- Main Wrapper -->
-    <div class="main-wrapper">
-        <div class="card">
-            <!-- Header -->
-            <div class="header">
-                <div class="header-icon">💬</div>
-                <h1>MLBB Chat Gen</h1>
-                <p class="subtitle">Generator Kode Chat Prank • Mobile Legends</p>
-            </div>
-
-            <!-- Form Inputs -->
-            <div class="form-grid">
-                <div class="input-group">
-                    <label><span class="label-icon">👤</span> Nick Musuh</label>
-                    <input type="text" id="nick" placeholder="Contoh: LordDarkness" oninput="generate()" autocomplete="off">
-                </div>
-                <div class="input-group">
-                    <label><span class="label-icon">⚔️</span> Hero Musuh</label>
-                    <input type="text" id="hero" placeholder="Contoh: Ling" oninput="generate()" autocomplete="off">
-                </div>
-                <div class="input-group">
-                    <label><span class="label-icon">💭</span> Pesan Chat</label>
-                    <input type="text" id="chat" placeholder="Tulis pesan prank kamu..." oninput="generate()" autocomplete="off">
-                </div>
-            </div>
-
-            <!-- Chat Type Toggle -->
-            <div class="chat-type-row">
-                <button class="chat-type-btn active" data-type="[Semua]" onclick="setChatType(this, '[Semua]')">🌐 Semua</button>
-                <button class="chat-type-btn" data-type="[Tim]" onclick="setChatType(this, '[Tim]')">👥 Tim</button>
-                <button class="chat-type-btn" data-type="" onclick="setChatType(this, '')">🎯 Langsung</button>
-            </div>
-
-            <!-- Preview -->
-            <div class="preview-section">
-                <span class="preview-label">Preview Chat In-Game</span>
-                <div class="chat-preview-box" id="previewBox">
-                    <span class="chat-tag" id="previewTag">[Semua]</span>
-                    <span class="chat-nick" id="previewNick">LordDarkness</span>
-                    <span class="chat-hero" id="previewHero">(Ling)</span>
-                    <span class="chat-colon">:</span>
-                    <span class="chat-msg" id="previewMsg">Mabar yuk bentar lagi menang nih</span>
-                    <span class="typing-cursor"></span>
-                </div>
-            </div>
-
-            <!-- Preset Chats -->
-            <div class="preset-section">
-                <span class="preset-label-sm">🎭 Preset Chat Cepat</span>
-                <div class="preset-chips">
-                    <span class="preset-chip" onclick="usePreset('Mabar yuk bentar lagi menang nih')">🔥 Mabar yuk</span>
-                    <span class="preset-chip" onclick="usePreset('Ez game, kalian noob semua')">💀 Ez game</span>
-                    <span class="preset-chip" onclick="usePreset('Ampun bang jago banget')">🙏 Ampun bang</span>
-                    <span class="preset-chip" onclick="usePreset('Lagi main sambil tidur nih')">😴 Sambil tidur</span>
-                    <span class="preset-chip" onclick="usePreset('Santuy aja kali, ga usah serius')">😎 Santuy</span>
-                    <span class="preset-chip" onclick="usePreset('Tim kalian pada kemana?')">🤔 Pada kemana</span>
-                </div>
-            </div>
-
-            <!-- Output Code -->
-            <span class="output-label">📋 Klik untuk Salin Kode</span>
-            <div class="output-container" id="outputContainer" onclick="copyText(event)" title="Klik untuk menyalin kode">
-                <p class="output-code" id="resultCode">p [FF0000FF][Semua]LordDarkness (Ling):[FFFFFFFF] Mabar yuk bentar lagi menang nih</p>
-            </div>
-            <span class="copy-hint">Salin dan tempel di chat [All] saat pertandingan 🎮</span>
-
-            <!-- Footer -->
-            <p class="footer-note">✨ Untuk keperluan konten, prank, & editing — jangan disalahgunakan ya!</p>
+    <main class="card">
+        <div class="header">
+            <span class="header-icon">🎮</span>
+            <h1>MLBB Chat Generator</h1>
+            <p>Buat chat palsu dengan format in-game</p>
         </div>
+
+        <div class="form-group">
+            <label for="nick">Nick Musuh</label>
+            <input type="text" id="nick" placeholder="Contoh: ProPlayer123" autocomplete="off" spellcheck="false">
+        </div>
+
+        <div class="form-group">
+            <label for="hero">Hero Musuh</label>
+            <input type="text" id="hero" placeholder="Contoh: Ling" autocomplete="off" spellcheck="false">
+        </div>
+
+        <div class="form-group">
+            <label for="chat">Pesan Chat</label>
+            <input type="text" id="chat" placeholder="Tulis pesan kamu..." autocomplete="off" spellcheck="false">
+        </div>
+
+        <div class="divider"><span>Preview</span></div>
+
+        <div class="preview-box" id="previewBox">
+            <span class="channel">[Semua]</span>
+            <span class="nick" id="pNick">nickmusuh</span>
+            <span style="color:var(--text-muted)">(</span><span class="hero" id="pHero">Hirara</span><span style="color:var(--text-muted)">):</span>
+            <span class="msg" id="pChat">hoammm</span>
+        </div>
+
+        <div class="output-section">
+            <div class="copy-tooltip">Klik untuk salin</div>
+            <label>Kode Chat</label>
+            <div class="output-box" id="resultCode" onclick="copyText()" title="Klik untuk menyalin">
+                p [FF0000FF][Semua]nickmusuh (Hirara):[FFFFFFFF] hoammm
+            </div>
+            <div class="output-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                Salin dan tempel di chat [All] saat pertandingan
+            </div>
+        </div>
+
+        <div class="footer">
+            Dibuat untuk hiburan — gunakan dengan bijak
+        </div>
+    </main>
+
+    <div class="toast" id="toast">
+        <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        Berhasil disalin
     </div>
 
     <script>
-        // State
-        let currentChatType = '[Semua]';
+        const $ = id => document.getElementById(id);
 
-        // Default values for preview
         const defaults = {
-            nick: 'LordDarkness',
-            hero: 'Ling',
-            chat: 'Mabar yuk bentar lagi menang nih',
+            nick: 'nickmusuh',
+            hero: 'Hirara',
+            chat: 'hoammm'
         };
 
-        // Initialize on load
-        function init() {
-            document.getElementById('nick').value = defaults.nick;
-            document.getElementById('hero').value = defaults.hero;
-            document.getElementById('chat').value = defaults.chat;
-            generate();
-        }
-
-        // Set chat type
-        function setChatType(btn, type) {
-            currentChatType = type;
-            document.querySelectorAll('.chat-type-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            generate();
-            // Small haptic-like animation
-            btn.style.transform = 'scale(0.92)';
-            setTimeout(() => { btn.style.transform = ''; }, 120);
-        }
-
-        // Use preset
-        function usePreset(chatText) {
-            const chatInput = document.getElementById('chat');
-            chatInput.value = chatText;
-            chatInput.focus();
-            generate();
-            // Highlight animation
-            chatInput.style.borderColor = 'var(--accent)';
-            chatInput.style.boxShadow = '0 0 0 8px rgba(255,159,67,0.12)';
-            setTimeout(() => {
-                chatInput.style.borderColor = 'transparent';
-                chatInput.style.boxShadow = 'var(--shadow-sm)';
-                chatInput.focus();
-            }, 400);
-        }
-
-        // Generate code & update preview
         function generate() {
-            const nick = document.getElementById('nick').value.trim() || defaults.nick;
-            const hero = document.getElementById('hero').value.trim() || defaults.hero;
-            const chat = document.getElementById('chat').value.trim() || defaults.chat;
+            const nick = $('nick').value.trim() || defaults.nick;
+            const hero = $('hero').value.trim() || defaults.hero;
+            const chat = $('chat').value.trim() || defaults.chat;
 
-            // Build the code
-            let typePrefix = currentChatType ? currentChatType + ' ' : '';
-            let fullCode = `p [FF0000FF]${typePrefix}${nick} (${hero}):[FFFFFFFF] ${chat}`;
+            const code = `p [FF0000FF][Semua]${nick} (${hero}):[FFFFFFFF] ${chat}`;
 
-            // Update result code
-            document.getElementById('resultCode').innerText = fullCode;
-
-            // Update preview
-            document.getElementById('previewTag').innerText = currentChatType || '';
-            document.getElementById('previewNick').innerText = nick;
-            document.getElementById('previewHero').innerText = `(${hero})`;
-            document.getElementById('previewMsg').innerText = chat;
-
-            // Add subtle animation to preview
-            const previewBox = document.getElementById('previewBox');
-            previewBox.style.borderLeftColor = 'var(--accent)';
-            setTimeout(() => {
-                previewBox.style.borderLeftColor = 'var(--primary)';
-            }, 300);
+            $('resultCode').textContent = code;
+            $('pNick').textContent = nick;
+            $('pHero').textContent = hero;
+            $('pChat').textContent = chat;
         }
 
-        // Copy with ripple effect
-        function copyText(event) {
-            const text = document.getElementById('resultCode').innerText;
-            const container = document.getElementById('outputContainer');
-
-            // Ripple effect
-            if (event && event.clientX) {
-                const rect = container.getBoundingClientRect();
-                const x = event.clientX - rect.left;
-                const y = event.clientY - rect.top;
-                const ripple = document.createElement('span');
-                ripple.className = 'copy-ripple';
-                ripple.style.left = x + 'px';
-                ripple.style.top = y + 'px';
-                ripple.style.width = '20px';
-                ripple.style.height = '20px';
-                ripple.style.marginLeft = '-10px';
-                ripple.style.marginTop = '-10px';
-                container.appendChild(ripple);
-                setTimeout(() => ripple.remove(), 700);
-            }
-
-            // Copy to clipboard
-            navigator.clipboard.writeText(text).then(() => {
+        async function copyText() {
+            const text = $('resultCode').textContent;
+            try {
+                await navigator.clipboard.writeText(text);
                 showToast();
-            }).catch(err => {
+            } catch (err) {
                 // Fallback
                 const ta = document.createElement('textarea');
                 ta.value = text;
@@ -814,30 +417,23 @@
                 document.execCommand('copy');
                 document.body.removeChild(ta);
                 showToast();
-            });
-        }
-
-        // Show toast
-        function showToast() {
-            const toast = document.getElementById('toast');
-            toast.className = 'show';
-            clearTimeout(toast._timeout);
-            toast._timeout = setTimeout(() => {
-                toast.className = '';
-            }, 2500);
-        }
-
-        // Keyboard shortcut: Ctrl+C on output container focus
-        document.getElementById('outputContainer').addEventListener('keydown', function(e) {
-            if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
-                e.preventDefault();
-                copyText(e);
             }
-        });
-        document.getElementById('outputContainer').setAttribute('tabindex', '0');
+        }
 
-        // Initialize
-        init();
+        function showToast() {
+            const toast = $('toast');
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2200);
+        }
+
+        // Auto-generate on input
+        ['nick', 'hero', 'chat'].forEach(id => {
+            $(id).addEventListener('input', generate);
+        });
+
+        // Generate once on load
+        generate();
     </script>
+
 </body>
 </html>
